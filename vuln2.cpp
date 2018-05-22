@@ -17,7 +17,7 @@ uint64_t read_int() {
 }
 
 struct Animal {
-    string type;
+    string m_type;
     virtual ~Animal() {}
     virtual void talk() const = 0;
     virtual string image() const = 0;
@@ -58,7 +58,7 @@ void cmd_get() {
     else
         animal = make_unique<Dog>();
     cout << "Congratulations, you got a\n\n" << animal->image() << endl;
-    animal->type = type;
+    animal->m_type = type;
 }
 
 void cmd_interact() {
@@ -69,14 +69,14 @@ void cmd_interact() {
     cout << "What do you want to do? " << flush;
     string action = read_line();
     if (action == "throw") {
-        if (animal->type == "duck") {
+        if (animal->m_type == "duck") {
             cout << "The duck is unimpressed by your throw." << endl;
             return;
         }
         cout << "What do you throw? " << flush;
         static_cast<Dog*>(animal.get())->fetch(read_line());
     } else if (action == "feed") {
-        if (animal->type == "dog") {
+        if (animal->m_type == "dog") {
             cout << "The dog does not like bread." << endl;
             return;
         }
