@@ -1,0 +1,53 @@
+*** Dumping AST Record Layout
+         0 | struct Animal
+         0 |   (Animal vtable pointer)
+         8 |   class std::__cxx11::basic_string<char> m_type
+         8 |     struct std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::_Alloc_hider _M_dataplus
+         8 |       class std::allocator<char> (base) (empty)
+         8 |         class __gnu_cxx::new_allocator<char> (base) (empty)
+         8 |       std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::pointer _M_p
+        16 |     std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::size_type _M_string_length
+        24 |     union std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::(anonymous at /bin/../lib64/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/bits/basic_string.h:160:7) 
+        24 |       char [16] _M_local_buf
+        24 |       std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::size_type _M_allocated_capacity
+           | [sizeof=40]
+
+*** Dumping AST Record Layout
+         0 | struct Duck
+         0 |   struct Animal (primary base)
+         0 |     (Animal vtable pointer)
+         8 |     class std::__cxx11::basic_string<char> m_type
+         8 |       struct std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::_Alloc_hider _M_dataplus
+         8 |         class std::allocator<char> (base) (empty)
+         8 |           class __gnu_cxx::new_allocator<char> (base) (empty)
+         8 |         std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::pointer _M_p
+        16 |       std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::size_type _M_string_length
+        24 |       union std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::(anonymous at /bin/../lib64/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/bits/basic_string.h:160:7) 
+        24 |         char [16] _M_local_buf
+        24 |         std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::size_type _M_allocated_capacity
+        40 |   uint64_t m_bread
+           | [sizeof=48]
+
+*** Dumping AST Record Layout
+         0 | struct Dog
+         0 |   struct Animal (primary base)
+         0 |     (Animal vtable pointer)
+         8 |     class std::__cxx11::basic_string<char> m_type
+         8 |       struct std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::_Alloc_hider _M_dataplus
+         8 |         class std::allocator<char> (base) (empty)
+         8 |           class __gnu_cxx::new_allocator<char> (base) (empty)
+         8 |         std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::pointer _M_p
+        16 |       std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::size_type _M_string_length
+        24 |       union std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::(anonymous at /bin/../lib64/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/bits/basic_string.h:160:7) 
+        24 |         char [16] _M_local_buf
+        24 |         std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::size_type _M_allocated_capacity
+        40 |   class std::__cxx11::basic_string<char> m_thing
+        40 |     struct std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::_Alloc_hider _M_dataplus
+        40 |       class std::allocator<char> (base) (empty)
+        40 |         class __gnu_cxx::new_allocator<char> (base) (empty)
+        40 |       std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::pointer _M_p
+        48 |     std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::size_type _M_string_length
+        56 |     union std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::(anonymous at /bin/../lib64/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../include/c++/8.1.0/bits/basic_string.h:160:7) 
+        56 |       char [16] _M_local_buf
+        56 |       std::__cxx11::basic_string<char, struct std::char_traits<char>, class std::allocator<char> >::size_type _M_allocated_capacity
+           | [sizeof=72]
