@@ -24,6 +24,7 @@ Ich habe https://github.com/niklasb/gdbinit benutzt. `./setup.sh` installiert
 eine Reihe von GDB scripts. Danach dann mit
 
 ```
+export LD_LIBRARY_PATH="$(pwd)"
 gdb -ex peda -ex 'tcp 4444 ./animals' -ex c
 ```
 
