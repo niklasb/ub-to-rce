@@ -1,2 +1,2 @@
-animals: vuln2.cpp
+animals: animals.cpp
 	clang++ -Wall -Wpedantic -O2 $< -o $@
